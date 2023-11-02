@@ -273,6 +273,11 @@ const MainListItems = (props) => {
         primary={i18n.t("mainDrawer.listItems.todolist")}
         icon={<EventIcon />}
       />
+     <ListItemLink
+        to="/fluxobot"
+        primary={i18n.t("mainDrawer.listItems.fluxobot")}
+        icon={<EventIcon />}
+      />
       <ListItem
         button
         onClick={() => setOpenKanbanSubmenu((prev) => !prev)}
