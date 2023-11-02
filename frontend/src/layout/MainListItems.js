@@ -443,6 +443,11 @@ const MainListItems = (props) => {
               primary={i18n.t("mainDrawer.listItems.users")}
               icon={<PeopleAltOutlinedIcon />}
             />
+             <ListItemLink
+              to="/fluxobot"
+              primary={i18n.t("mainDrawer.listItems.fluxobt")}
+              icon={<PeopleAltOutlinedIcon />}
+            />
             <ListItemLink
               to="/messages-api"
               primary={i18n.t("mainDrawer.listItems.messagesAPI")}
