@@ -17,6 +17,8 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ReactFlow from 'reactflow';
+import 'reactflow/dist/style.css';
 
 const useStyles = makeStyles(theme => ({
 	mainPaper: {
@@ -81,14 +83,12 @@ const Helps = () => {
 
 	return (
 		<MainContainer>
-			<MainHeader>
-				<Title>{i18n.t("helps.title")}</Title>
-				<MainHeaderButtonsWrapper>
-				</MainHeaderButtonsWrapper>
-			</MainHeader>
-			<Paper className={classes.mainPaper} variant="outlined">
-				{ renderHelps() }
-			</Paper>
+			 <div style={{ height: '100%' }}>
+      <ReactFlow>
+        <Background />
+        <Controls />
+      </ReactFlow>
+    </div>
 		</MainContainer>
 	);
 };
