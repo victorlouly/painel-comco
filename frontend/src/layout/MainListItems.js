@@ -445,7 +445,7 @@ const MainListItems = (props) => {
             />
              <ListItemLink
               to="/fluxobot"
-              primary={i18n.t("mainDrawer.listItems.fluxobt")}
+              primary={i18n.t("mainDrawer.listItems.fluxobot")}
               icon={<PeopleAltOutlinedIcon />}
             />
             <ListItemLink
